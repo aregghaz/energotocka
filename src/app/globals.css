@@ -1,0 +1,55 @@
+@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: #f5f5f5;
+}
+
+body {
+  background: var(--foreground-rgb);
+}
+
+.styles-module_item-tracker__3bypy {
+  padding-bottom: 20px;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.layout-container {
+  padding: 20px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 15px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 15s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.running {
+  margin: 60px 0px 40px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

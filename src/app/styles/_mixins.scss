@@ -1,0 +1,6 @@
+@mixin textVariant($size, $col, $Fweight, $Ffamily) {
+  font-size: $size;
+  color: $col;
+  font-weight: $Fweight;
+  font-family: $Ffamily;
+}

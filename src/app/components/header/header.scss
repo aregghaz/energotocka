@@ -1,0 +1,258 @@
+@import "../../styles/mixins";
+.header_container_banner {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  .header_container_left {
+    max-width: 600px;
+    width: 100%;
+    .title-desc {
+      @include textVariant(14px, #959595, 400, "Raleway");
+      font-family: sans-serif;
+    }
+  }
+  .header_top_logo_text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    margin-top: 90px;
+    @include textVariant(70px, #34ab7d, 400, Age);
+  }
+  .title-desc-info {
+    //font-weight: 900;
+    line-height: 30px;
+    color: #353535;
+    font-family: Raleway sans-serif;
+    @include textVariant(30px, #353535, 900, "Raleway");
+  }
+}
+
+.header_right {
+  .hedaer_image_right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .right_image_electronica {
+    margin-top: 50px;
+  }
+}
+
+// banner
+.full-popup {
+  border-radius: 20px;
+  background: #ffffff;
+  // width: 100%;
+  padding: 50px;
+  border-radius: 20px;
+  border-image-source: linear-gradient(
+    90deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  .modal-content {
+    border-radius: 20px;
+  }
+}
+.banner_card {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  margin-top: 15px;
+  .info-popup-container {
+    width: 100%;
+    text-align: center;
+  }
+  .read_state {
+    &::after {
+      content: "Посмотреть коммерческое предложение";
+    }
+    background: #34ab7d;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    @include textVariant(20px, #ffffff, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  .banner_text {
+    @include textVariant(20px, #050505, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+    line-height: 24px;
+  }
+}
+
+.success_modal {
+  max-width: 520px;
+  width: 100%;
+  padding: 50px 80px;
+  .success_modal_flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 35px;
+    justify-content: center;
+  }
+  .real-time-text {
+    margin-top: 50px;
+    display: block;
+    @include textVariant(16px, #959595, 400, "Raleway");
+  }
+  .info_succes_modal {
+    max-width: 520px;
+    width: 100%;
+    span {
+      margin-bottom: 15px;
+
+      @include textVariant(16px, #101010, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
+
+      display: block;
+    }
+    @include textVariant(16px, #101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  .top_text_title {
+    @include textVariant(50px, #34ab7d, 500, "Age");
+  }
+  max-width: 530px;
+  width: 100%;
+  .model_sub_header {
+    @include textVariant(20px, #101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  .flex-done-icon {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 20px;
+  }
+}
+
+.banner_container {
+  .-translate-x-1\/2 {
+    --tw-translate-x: -50%;
+  }
+  .second_banner {
+    height: 160px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    img {
+      top: -40px;
+      position: relative;
+    }
+    .banner_title {
+      @include textVariant(30px, #050505, 400, Age);
+      margin: 0;
+    }
+    .banner_info {
+      margin: 5px 0px 5px;
+      @include textVariant(18px, #353535, 400, "Raleway");
+    }
+    .banner_more {
+      @include textVariant(18px, #34ab7d, 400, "Raleway");
+    }
+  }
+}
+
+.header_top_banner {
+  .banner_button {
+    background: #34ab7d;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .info {
+    margin-top: 30px;
+    @include textVariant(16px, #959595, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  max-width: 530px;
+  width: 100%;
+  .top_text {
+    .header_top_info {
+      @include textVariant(18px, #101010, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
+    }
+    .model_sub_header {
+      @include textVariant(20px, #101010, 400, "Age");
+    }
+    .top_text_title {
+      @include textVariant(50px, #34ab7d, 500, "Age");
+    }
+    p {
+      @include textVariant(20px, #353535, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
+    }
+  }
+  .field_inputs {
+    margin: 20px 20px 30px 20px;
+    input {
+      border-bottom: 1px solid #353535;
+    }
+  }
+}
+
+// running
+.running {
+  .animate-running-line {
+    background: #34ab7d;
+  }
+  .running-text {
+    @include textVariant(20px, #f0f0f0, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner_card {
+    margin-top: 40px;
+    .read_state {
+      &::after {
+        content: "Посмотреть предложение";
+      }
+    }
+  }
+  .header_container_banner {
+    .title-desc-info {
+      font-size: 21px;
+    }
+    .second_banner {
+      padding: 15px;
+      text-align: left;
+      height: 170px;
+      .banner_info {
+        font-size: 14px;
+      }
+      .banner_title {
+        line-height: normal;
+        font-size: 20px;
+      }
+    }
+    .title {
+      font-size: 50px;
+    }
+    .banner_text {
+      text-align: left;
+    }
+    .header_right {
+      position: absolute;
+      right: 20px;
+    }
+    .header_top_logo_text {
+      display: none !important;
+    }
+    .right_image_electronica {
+      display: none;
+    }
+    .header_container_left {
+      max-width: inherit !important;
+      text-align: center;
+    }
+  }
+  .running {
+    margin: 40px 0px 50px;
+  }
+}

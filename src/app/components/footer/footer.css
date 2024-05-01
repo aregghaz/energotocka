@@ -1,0 +1,119 @@
+.footer-container {
+  margin-top: 100px;
+  background: #050505;
+  border-top-left-radius: 25px; /* Rounded top-left corner */
+  border-top-right-radius: 25px;
+  padding: 50px;
+}
+.footer-container .top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .top-footer .footer-title {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Age";
+}
+.footer-container .footer-content {
+  margin: 30px 0px 20px;
+}
+.footer-container .footer-text-site {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+  opacity: 0.5;
+  font-family: sans-serif;
+}
+.footer-container .footer-text-right {
+  text-align: right;
+}
+.footer-container .footer-text-right,
+.footer-container .footer-text-left {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+
+.cookie_container {
+  position: fixed;
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.cookie_container p {
+  font-size: 16px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+.cookie_container .text_coookie {
+  max-width: 900px;
+  width: 100%;
+}
+.cookie_container .btn_cookie {
+  background: #34ab7d;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+
+@media screen and (max-width: 920px) {
+  .footer-container {
+    padding: 50px 20px !important;
+  }
+  .footer-container .top-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start !important;
+  }
+  .footer-container .top-footer .footer-title {
+    font-size: 30px;
+  }
+  .footer-container .footer-text-center {
+    margin: 55px 0px 50px;
+  }
+  .footer-container .footer-text-left {
+    margin-top: 50px;
+  }
+  .footer-container .footer-text-site {
+    font-size: 12px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-content li {
+    text-align: left;
+    font-size: 14px;
+  }
+  .cookie_container {
+    flex-direction: column;
+  }
+  .cookie_container p {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .cookie_container .btn_cookie {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

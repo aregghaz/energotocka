@@ -1,0 +1,33 @@
+.faq-container {
+  .styles-module_item-tracker__3bypy {
+    gap: 18px;
+    flex-direction: column;
+    .styles-module_item-container__a8zaY {
+      width: 100% !important;
+    }
+  }
+}
+
+// .faq-container {
+//   .styles-module_item-tracker__3bypy {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+
+@media screen and (max-width: 920px) {
+  .layout-container {
+    // max-width: 350px;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about_banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .styles-module_item-tracker__3bypy {
+    gap: 15px;
+  }
+}

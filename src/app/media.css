@@ -1,0 +1,24 @@
+.faq-container .styles-module_item-tracker__3bypy {
+  gap: 18px;
+  flex-direction: column;
+}
+.faq-container .styles-module_item-tracker__3bypy .styles-module_item-container__a8zaY {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 920px) {
+  .layout-container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about_banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .styles-module_item-tracker__3bypy {
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
