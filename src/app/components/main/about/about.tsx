@@ -20,7 +20,7 @@ const About = () => {
           </p>
         </div>
         <div className="about_banner_image">
-          <Image cl src={AbouImage} width={600} height={205} alt="About of the author" className="desc" />
+          <Image  src={AbouImage} width={600} height={205} alt="About of the author" className="desc" />
           <Image
             src={AboutCarMob}
             alt="About of the author"
