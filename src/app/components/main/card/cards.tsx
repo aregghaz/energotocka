@@ -13,31 +13,11 @@ const Cards = () => {
 
   return (
     <div className="cards_container">
-      <h3 className="cards_title text-3xl font-bold mb-4">
+      <h3 className="cards_title text-3xl font-bold">
         преимущества наших станций
       </h3>
       <section className="cards-list">
-        <Carousel
-          responsive={true}
-          show={slidesToShow}
-          slide={3}
-          swiping={true}
-          key={1}
-          // hideArrows={true}
-          infinite={true}
-
-          // leftArrow={
-          //   <div className="elem-right">
-          //     <LeftArrow />
-          //   </div>
-          // }
-          // rightArrow={
-          //   <div className="elem-right">
-          //     <LeftArrow clasnName={"right"} />
-          //   </div>
-          // }
-        >
-          <Card
+        <Card
             title={"Инновационность"}
             htmlContent={true}
             component={
@@ -63,8 +43,8 @@ const Cards = () => {
                 </ul>
               </Text>
             }
-          />
-          <Card
+        />
+        <Card
             title={"Совместимость"}
             htmlContent={true}
             component={
@@ -77,8 +57,8 @@ const Cards = () => {
                 </p>
               </Text>
             }
-          />
-          <Card
+        />
+        <Card
             title={"Безопасность"}
             htmlContent={true}
             component={
@@ -104,8 +84,7 @@ const Cards = () => {
                 </ul>
               </Text>
             }
-          />
-        </Carousel>
+        />
       </section>
     </div>
   );

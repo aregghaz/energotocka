@@ -3,7 +3,7 @@ import SuccesModal from "./succesModal";
 
 const BannerPopupContent = () => {
   return (
-    <div className="header_top_banner  m-8">
+    <div className="header_top_banner">
       <div className="top_text">
         <h2 className="top_text_title">energotochka</h2>
         <p className="model_sub_header">электрические станции под ключ</p>

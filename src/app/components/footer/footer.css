@@ -1,8 +1,8 @@
 .footer-container {
   margin-top: 100px;
   background: #050505;
-  border-top-left-radius: 25px; /* Rounded top-left corner */
-  border-top-right-radius: 25px;
+  border-top-left-radius: 20px; /* Rounded top-left corner */
+  border-top-right-radius: 20px;
   padding: 50px;
 }
 .footer-container .top-footer {
@@ -11,34 +11,55 @@
   align-items: center;
 }
 .footer-container .top-footer .footer-title {
+  font-family: Age;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  min-width: 420px;
   font-size: 50px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Age";
 }
 .footer-container .footer-content {
-  margin: 30px 0px 20px;
+  margin: 50px 0px 25px;
+  vertical-align: top;
+  justify-content: space-between;
+  text-align: start;
+  height: 120px;
 }
 .footer-container .footer-text-site {
   margin-top: 20px;
+  font-family: Raleway;
   font-size: 16px;
-  color: #ffffff;
   font-weight: 400;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
+  line-height: 18.78px;
+  text-align: left;
   opacity: 0.5;
-  font-family: sans-serif;
 }
 .footer-container .footer-text-right {
   text-align: right;
 }
 .footer-container .footer-text-right,
 .footer-container .footer-text-left {
+  height: 100%;
+  font-family: Raleway;
   font-size: 20px;
-  color: #ffffff;
   font-weight: 400;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
+  line-height: 23.48px;
+  text-align: left;
+  min-width: 580px;
+}
+.footer-container .footer-text-center {
+  font-family: Raleway;
+}
+.footer-container .footer-text-right {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: right;
 }
 
 .cookie_container {
@@ -46,33 +67,33 @@
   bottom: 0;
   background: #ffffff;
   width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
   display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
 }
 .cookie_container p {
-  font-size: 16px;
-  color: #101010;
+  font-family: Raleway;
+  font-size: 18px;
   font-weight: 400;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
+  line-height: 20px;
+  text-align: left;
+  min-width: 80%;
 }
 .cookie_container .text_coookie {
-  max-width: 900px;
-  width: 100%;
+  max-width: 860px;
+  width: 860px;
 }
 .cookie_container .btn_cookie {
+  width: 320px;
+  height: 60px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: white;
   background: #34ab7d;
   border-radius: 10px;
   padding: 10px;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
 }
 
 @media screen and (max-width: 920px) {

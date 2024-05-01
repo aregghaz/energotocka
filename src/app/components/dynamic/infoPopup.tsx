@@ -20,7 +20,7 @@ const InfoPopup: React.FC<Iinfo> = ({ title, children, btnText }) => {
       </p>
 
       {/* Modal Overlay */}
-      {isOpen && <div className="fixed inset-0 bg-black opacity-50 z-50"></div>}
+      {isOpen && <div className="fixed inset-0 bg-black opacity-50 z-50" style={{"borderRadius":20}}></div>}
 
       {/* Modal Dialog Box */}
       {isOpen && (

@@ -13,22 +13,23 @@
     border-radius: 20px;
     background-color: #ffffff;
     display: flex;
-   // gap: 20px;
+    // gap: 20px;
 
   }
 
   .desc {
-    width: 520px!important;
-    height: 205px!important;
+    width: 520px !important;
+    height: 205px !important;
   }
 
   .about_banner_text {
     max-width: 520px;
     width: 100%;
     margin-right: 20px;
+
     p {
       display: flex;
-      align-items:center;
+      align-items: center;
       max-width: 520px;
       font-family: Raleway;
       font-size: 18px;
@@ -40,12 +41,15 @@
       //  @include textVariant(18px, #353535, 500, "sans-seif");
     }
   }
-  .about_banner_image{
-    min-width: 600px!important;
-    img{
-      min-width: 600px!important;
+
+  .about_banner_image {
+    min-width: 600px !important;
+
+    img {
+      min-width: 600px !important;
     }
   }
+
   .about_title {
     @include textVariant(30px, #353535, 500, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
@@ -60,14 +64,16 @@
   margin-top: 100px;
 
   .cards_title {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     @include textVariant(30px, #353535, 500, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
   }
 
   .cards-list {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
     .styles-module_item-tracker__3bypy {
       gap: 20px;
@@ -79,7 +85,8 @@
   }
 
   .full-card {
-    max-width: 380px;
+    padding: 20px;
+    min-width: 380px;
     width: 100%;
     border: 0.5px solid;
     background: #ffffff;
@@ -89,15 +96,32 @@
                     #000000 0%,
                     rgba(0, 0, 0, 0) 100%
     );
-    height: 100%;
-
+    min-height: 245px;
+hr{
+  margin-bottom: 20px;
+}
     li {
       display: flex;
       gap: 10px;
-      margin: 5px 0px;
+      height: 30px;
+      line-height: 20px;
+      color: #050505;
+      font-family: Raleway;
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 20px;
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: left;
+
     }
 
     .line {
+
       border-image-source: linear-gradient(
                       90deg,
                       #000000 0%,
@@ -109,9 +133,9 @@
 }
 
 .blogs_list {
+  min-width: 1180px;
   display: flex;
   justify-content: space-between;
-  gap: 15px;
   // align-items: flex-end;
   .styles-module_item-tracker__3bypy {
     gap: 20px;
@@ -130,7 +154,16 @@
 
   .full-card {
     // height: 100%;
-    height: 265px;
+    padding: 20px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+    min-height: 245px;
+    max-height: 245px;
+    min-width: 380px;
     max-width: 380px;
     width: 100%;
     border: 0.5px solid;
@@ -141,7 +174,14 @@
                     #000000 0%,
                     rgba(0, 0, 0, 0) 100%
     );
+    p{
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
 
+    }
     .px-6 {
       display: flex;
       flex-direction: column;
@@ -162,18 +202,16 @@
 }
 
 .full-card-title {
-  @include textVariant(18px, #050505, 400, "Raleway");
-  font-family: Raleway format("truetype") sans-serif;
+  margin-bottom: 20px;
+  @include textVariant(20px, #050505, 400, "Raleway");
 
-  hr {
-    padding: 20px 0;
-  }
 
   border-image: linear-gradient(to right, #000000 100%, #000000 0%) 1;
 }
 
 .card-tab-container {
   margin-top: 100px;
+
 
   .card-tab-title {
     @include textVariant(30px, #353535, 500, "Raleway");
@@ -284,7 +322,7 @@
 
   .faq-list {
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 35px;
     padding: 15px;
     margin: 15px 0px;
 
@@ -312,6 +350,7 @@
   }
 
   .circle-arrow {
+    margin-right: 20px;
     background: #34ab7d;
     border-radius: 25px;
 
@@ -324,10 +363,13 @@
 // BLOGS
 .blogs_container {
   margin-top: 100px;
+  min-width: 1180px;
 
   .blogs_container_title {
-    @include textVariant(30px, #101010, 400, "Raleway");
-    font-family: Raleway format("truetype") sans-serif;
+    color: #353535;
+    line-height: 20px;
+    @include textVariant(30px, #101010, 400, Age);
+    font-family: Age format("normal") sans-serif;
   }
 }
 
@@ -348,7 +390,12 @@
     max-width: 1100px;
     width: 100%;
   }
-
+  .full-card{
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 245px;
+    max-height: 245px;
+  }
   .blogs_content_container {
     display: flex;
     gap: 30px;
@@ -379,14 +426,24 @@
 // NETWORK
 
 .network_content {
+
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
   background-color: white;
-  padding: 30px 40px 30px 20px;
+  padding: 30px;
   border-radius: 15px;
 
+  .frame-map {
+    iframe {
+      border-radius: 15px;
+      max-width: 580px;
+    }
+  }
+
   .banner_button {
+    min-height: 50px;
+    min-width: 540px;
     background: #34ab7d;
     width: 100%;
     margin-top: 20px;
@@ -397,10 +454,13 @@
   }
 
   .inputs_container {
-    max-width: 540px;
+    min-width: 520px;
+    max-height: 40px;
     width: 100%;
 
     input {
+      max-height: 40px;
+      min-height: 40px;
       margin: 5px 0px;
       border-bottom: 1px solid #050505;
     }
@@ -471,11 +531,17 @@
 
 // network
 .network_container {
+  max-width: 1180px;
+  min-width: 1180px;
   margin-top: 100px;
 
   .network_container_title {
-    @include textVariant(30px, #353535, 500, "Raleway");
-    font-family: Raleway format("truetype") sans-serif;
+    font-family: Age;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #353535;
   }
 }
 
@@ -519,6 +585,7 @@
 
     .cards-list {
       .full-card-title {
+        margin-bottom: 20px;
         font-size: 18px;
       }
 

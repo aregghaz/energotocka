@@ -48,7 +48,7 @@
   margin-top: 100px;
 }
 .cards_container .cards_title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 30px;
   color: #353535;
   font-weight: 500;
@@ -56,8 +56,10 @@
   font-family: Raleway format("truetype") sans-serif;
 }
 .cards_container .cards-list {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .cards_container .cards-list .styles-module_item-tracker__3bypy {
   gap: 20px;
@@ -66,18 +68,34 @@
   width: 380px !important;
 }
 .cards_container .full-card {
-  max-width: 380px;
+  padding: 20px;
+  min-width: 380px;
   width: 100%;
   border: 0.5px solid;
   background: #ffffff;
   border-radius: 20px;
   border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  height: 100%;
+  min-height: 245px;
+}
+.cards_container .full-card hr {
+  margin-bottom: 20px;
 }
 .cards_container .full-card li {
   display: flex;
   gap: 10px;
-  margin: 5px 0px;
+  height: 30px;
+  line-height: 20px;
+  color: #050505;
+  font-family: Raleway;
+  font-size: 18px;
+}
+.cards_container .full-card p {
+  margin-top: 20px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
 }
 .cards_container .full-card .line {
   border-image-source: linear-gradient(90deg, #000000 0%, rgb(0, 0, 0) 100%);
@@ -85,9 +103,9 @@
 }
 
 .blogs_list {
+  min-width: 1180px;
   display: flex;
   justify-content: space-between;
-  gap: 15px;
 }
 .blogs_list .styles-module_item-tracker__3bypy {
   gap: 20px;
@@ -105,13 +123,28 @@
   font-family: sans-serif;
 }
 .blogs_list .full-card {
-  height: 265px;
+  padding: 20px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  min-height: 245px;
+  max-height: 245px;
+  min-width: 380px;
   max-width: 380px;
   width: 100%;
   border: 0.5px solid;
   background: #ffffff;
   border-radius: 20px;
   border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.blogs_list .full-card p {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
 }
 .blogs_list .full-card .px-6 {
   display: flex;
@@ -125,15 +158,12 @@
 }
 
 .full-card-title {
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 20px;
   color: #050505;
   font-weight: 400;
   font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
   border-image: linear-gradient(to right, #000000 100%, #000000 0%) 1;
-}
-.full-card-title hr {
-  padding: 20px 0;
 }
 
 .card-tab-container {
@@ -235,7 +265,7 @@
 }
 .faq-container .faq-list {
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 35px;
   padding: 15px;
   margin: 15px 0px;
 }
@@ -260,6 +290,7 @@
   text-indent: 25px;
 }
 .faq-container .circle-arrow {
+  margin-right: 20px;
   background: #34ab7d;
   border-radius: 25px;
 }
@@ -269,13 +300,16 @@
 
 .blogs_container {
   margin-top: 100px;
+  min-width: 1180px;
 }
 .blogs_container .blogs_container_title {
+  color: #353535;
+  line-height: 20px;
   font-size: 30px;
   color: #101010;
   font-weight: 400;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
+  font-family: Age;
+  font-family: Age format("normal") sans-serif;
 }
 
 .blogs_list .-translate-x-1\/2 {
@@ -293,6 +327,12 @@
 .blogs_list .rounded {
   max-width: 1100px;
   width: 100%;
+}
+.blogs_list .full-card {
+  min-width: 380px;
+  max-width: 380px;
+  min-height: 245px;
+  max-height: 245px;
 }
 .blogs_list .blogs_content_container {
   display: flex;
@@ -320,12 +360,18 @@
 .network_content {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
   background-color: white;
-  padding: 30px 40px 30px 20px;
+  padding: 30px;
   border-radius: 15px;
 }
+.network_content .frame-map iframe {
+  border-radius: 15px;
+  max-width: 580px;
+}
 .network_content .banner_button {
+  min-height: 50px;
+  min-width: 540px;
   background: #34ab7d;
   width: 100%;
   margin-top: 20px;
@@ -334,10 +380,13 @@
   content: "Проконсультироваться со специалисом";
 }
 .network_content .inputs_container {
-  max-width: 540px;
+  min-width: 520px;
+  max-height: 40px;
   width: 100%;
 }
 .network_content .inputs_container input {
+  max-height: 40px;
+  min-height: 40px;
   margin: 5px 0px;
   border-bottom: 1px solid #050505;
 }
@@ -405,14 +454,17 @@
 }
 
 .network_container {
+  max-width: 1180px;
+  min-width: 1180px;
   margin-top: 100px;
 }
 .network_container .network_container_title {
+  font-family: Age;
   font-size: 30px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
   color: #353535;
-  font-weight: 500;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
 }
 
 @media screen and (max-width: 920px) {
@@ -443,6 +495,7 @@
     font-size: 20px;
   }
   .cards_container .cards-list .full-card-title {
+    margin-bottom: 20px;
     font-size: 18px;
   }
   .cards_container .cards-list .full-card li {

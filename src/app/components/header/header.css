@@ -45,14 +45,16 @@
 }
 
 .full-popup {
-  border-radius: 20px;
-  background: #ffffff;
+  width: 530px;
+  height: 530px;
   padding: 50px;
+  background: #ffffff;
   border-radius: 20px;
   border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 .full-popup .modal-content {
   border-radius: 20px;
+  background-color: white;
 }
 
 .banner_card {
@@ -93,13 +95,6 @@
   line-height: 24px;
 }
 
-.success_modal {
-  max-width: 520px;
-  width: 100%;
-  padding: 50px 80px;
-  max-width: 530px;
-  width: 100%;
-}
 .success_modal .success_modal_flex {
   display: flex;
   gap: 10px;
@@ -185,10 +180,6 @@
   font-family: "Raleway";
 }
 
-.header_top_banner {
-  max-width: 530px;
-  width: 100%;
-}
 .header_top_banner .banner_button {
   background: #34ab7d;
   width: 100%;
@@ -203,13 +194,16 @@
   font-family: Raleway format("truetype") sans-serif;
 }
 .header_top_banner .top_text .header_top_info {
+  margin-top: 20px;
+  font-family: Raleway;
   font-size: 18px;
-  color: #101010;
   font-weight: 400;
-  font-family: "Raleway";
-  font-family: Raleway format("truetype") sans-serif;
+  line-height: 18px;
+  text-align: center;
+  max-height: 50px;
 }
 .header_top_banner .top_text .model_sub_header {
+  margin-bottom: 20px;
   font-size: 20px;
   color: #101010;
   font-weight: 400;
@@ -251,7 +245,7 @@
     margin-top: 40px;
   }
   .banner_card .read_state::after {
-    content: "Посмотреть предложение";
+    content: "Подтвердить";
   }
   .header_container_banner .title-desc-info {
     font-size: 21px;

@@ -40,10 +40,12 @@
 
 // banner
 .full-popup {
-  border-radius: 20px;
+  width: 530px;
+  height: 530px;
+  padding: 50px;
+
   background: #ffffff;
   // width: 100%;
-  padding: 50px;
   border-radius: 20px;
   border-image-source: linear-gradient(
     90deg,
@@ -52,6 +54,7 @@
   );
   .modal-content {
     border-radius: 20px;
+    background-color: white;
   }
 }
 .banner_card {
@@ -87,9 +90,7 @@
 }
 
 .success_modal {
-  max-width: 520px;
-  width: 100%;
-  padding: 50px 80px;
+
   .success_modal_flex {
     display: flex;
     gap: 10px;
@@ -118,8 +119,7 @@
   .top_text_title {
     @include textVariant(50px, #34ab7d, 500, "Age");
   }
-  max-width: 530px;
-  width: 100%;
+
   .model_sub_header {
     @include textVariant(20px, #101010, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
@@ -169,14 +169,19 @@
     @include textVariant(16px, #959595, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
   }
-  max-width: 530px;
-  width: 100%;
+
   .top_text {
     .header_top_info {
-      @include textVariant(18px, #101010, 400, "Raleway");
-      font-family: Raleway format("truetype") sans-serif;
+      margin-top: 20px;
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: center;
+      max-height: 50px;
     }
     .model_sub_header {
+      margin-bottom: 20px;
       @include textVariant(20px, #101010, 400, "Age");
     }
     .top_text_title {
@@ -211,7 +216,7 @@
     margin-top: 40px;
     .read_state {
       &::after {
-        content: "Посмотреть предложение";
+        content: "Подтвердить";
       }
     }
   }

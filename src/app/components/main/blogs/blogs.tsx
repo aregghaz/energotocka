@@ -31,16 +31,6 @@ const Blogs = () => {
             key={1}
             hideArrows={true}
             infinite={true}
-            // leftArrow={
-            //   <div className="elem-right">
-            //     <LeftArrow />
-            //   </div>
-            // }
-            // rightArrow={
-            //   <div className="elem-right">
-            //     <LeftArrow clasnName={"right"} />
-            //   </div>
-            // }
           >
             <Card title="3 уровня зарядки электромобилей" htmlContent={false}>
               <div dangerouslySetInnerHTML={{ __html: blogText1 }} />
@@ -75,6 +65,8 @@ const Blogs = () => {
                 <Blogs_3_content />
               </InfoPopup>
             </Card>
+
+
           </Carousel>
         ) : (
           <>

@@ -15,8 +15,8 @@ const Card: React.FC<Iprops> = ({
                                 }) => {
     return (
         <div className="full-card max-w-sm rounded overflow-hidden shadow-lg">
-            <div className="px-6 py-4">
-                <h3 className="full-card-title font-bold text-xl mb-2  text-3xl font-bold mb-4">
+            <div className="">
+                <h3 className="full-card-title font-bold text-xl  text-3xl font-bold">
                     {title}
                 </h3>
                 <hr/>
